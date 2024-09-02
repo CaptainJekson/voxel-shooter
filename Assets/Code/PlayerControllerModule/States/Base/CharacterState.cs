@@ -15,6 +15,11 @@ namespace Code.PlayerControllerModule.States.Base
             
         }
 
+        public virtual void SetStateMachine(IStateMachine stateMachine)
+        {
+            
+        }
+
         public abstract bool CanEnter();
         
         public virtual void Update()

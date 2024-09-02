@@ -6,6 +6,7 @@ namespace Code.PlayerControllerModule.Interfaces
     {
         void OnEnterState();
         void OnExitState();
+        void SetStateMachine(IStateMachine stateMachine);
         bool CanEnter();
         void Update();
         void FixedUpdate();

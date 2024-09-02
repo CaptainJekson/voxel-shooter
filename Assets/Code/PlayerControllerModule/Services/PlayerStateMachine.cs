@@ -1,16 +1,12 @@
 using System.Collections.Generic;
-using System.ComponentModel;
-using Code.PlayerControllerModule.Configs;
 using Code.PlayerControllerModule.Enums;
 using Code.PlayerControllerModule.Interfaces;
 using Code.PlayerControllerModule.States;
-using Code.PlayerControllerModule.Views;
-using Code.PlayerModule.Interfaces;
 using Zenject;
 
 namespace Code.PlayerControllerModule.Services
 {
-    public class PlayerStateMachine : ITickable, IFixedTickable
+    public class PlayerStateMachine : IStateMachine, ITickable, IFixedTickable
     {
         private readonly Dictionary<PlayerStateType, ICharacterState> _states;
         
@@ -18,44 +14,17 @@ namespace Code.PlayerControllerModule.Services
         private PlayerStateType _currentStateType;
 
         public PlayerStateMachine(
-            PlayerView playerView, 
-            PlayerMover playerMover, 
-            PlayerStaminaController playerStaminaController,
-            IPlayerInputProvider playerInputProvider, 
-            PlayerConfig playerConfig, 
-            PlayerSoundConfig playerSoundConfig)
+            PlayerIdleState playerIdleState, 
+            PlayerJumpState playerJumpState,
+            PlayerMoveState playerMoveState,
+            PlayerMoveSprintState playerMoveSprintState)
         {
             _states = new Dictionary<PlayerStateType, ICharacterState>
             {
-                { PlayerStateType.Idle, new PlayerIdleState(
-                    playerView, 
-                    playerMover, 
-                    playerStaminaController,
-                    playerConfig,
-                    playerInputProvider) 
-                },
-                { PlayerStateType.Jump, new PlayerJumpState(
-                    playerView, 
-                    playerMover, 
-                    playerStaminaController,
-                    playerInputProvider, 
-                    playerConfig,
-                    playerSoundConfig) },
-                { PlayerStateType.Move, new PlayerMoveState(
-                    playerView, 
-                    playerConfig,
-                    playerMover, 
-                    playerStaminaController,
-                    playerInputProvider, 
-                    playerSoundConfig) },
-                { PlayerStateType.MoveSprint, new PlayerMoveSprintState(
-                    this, 
-                    playerConfig, 
-                    playerView, 
-                    playerStaminaController,
-                    playerMover,
-                    playerInputProvider, 
-                    playerSoundConfig) },
+                [PlayerStateType.Idle] = playerIdleState,
+                [PlayerStateType.Jump] = playerJumpState,
+                [PlayerStateType.Move] = playerMoveState,
+                [PlayerStateType.MoveSprint] = playerMoveSprintState,
             };
 
             InitializeState();
@@ -94,6 +63,11 @@ namespace Code.PlayerControllerModule.Services
 
         private void InitializeState()
         {
+            foreach (var state in _states)
+            {
+                state.Value.SetStateMachine(this);
+            }
+            
             _currentStateType = PlayerStateType.Idle;
             _currentState = _states[_currentStateType];
             _currentState.OnEnterState();

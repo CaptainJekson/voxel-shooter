@@ -1,5 +1,6 @@
 using Code.PlayerControllerModule.Configs;
 using Code.PlayerControllerModule.Enums;
+using Code.PlayerControllerModule.Interfaces;
 using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
@@ -15,11 +16,11 @@ namespace Code.PlayerControllerModule.States
         private readonly PlayerMover _playerMover;
         private readonly PlayerStaminaController _playerStaminaController;
         private readonly IPlayerInputProvider _playerInputProvider;
-        private readonly PlayerStateMachine _playerStateMachine;
         private readonly PlayerSoundConfig _playerSoundConfig;
         
+        private PlayerStateMachine _playerStateMachine;
+        
         public PlayerMoveSprintState(
-            PlayerStateMachine playerStateMachine, 
             PlayerConfig playerConfig, 
             PlayerView playerView, 
             PlayerStaminaController playerStaminaController, 
@@ -27,7 +28,6 @@ namespace Code.PlayerControllerModule.States
             IPlayerInputProvider playerInputProvider, 
             PlayerSoundConfig playerSoundConfig)
         {
-            _playerStateMachine = playerStateMachine;
             _playerConfig = playerConfig;
             _playerView = playerView;
             _playerStaminaController = playerStaminaController;
@@ -55,6 +55,11 @@ namespace Code.PlayerControllerModule.States
                    && (!_playerInputProvider.GetJumpInput() || _playerStaminaController.CurrentStamina < _playerConfig.JumpStaminaCost)
                    && _playerStaminaController.CurrentStamina > _playerConfig.StaminaMinStartSprint
                    && _playerView.isGrounded;
+        }
+
+        public override void SetStateMachine(IStateMachine stateMachine)
+        {
+            _playerStateMachine = (PlayerStateMachine) stateMachine;
         }
 
         public override void Update()
