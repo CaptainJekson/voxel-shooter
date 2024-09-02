@@ -14,11 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DestroySleeveDelay: 0
   WeaponConfigs:
-  - WeaponView: {fileID: -9157396005647229268, guid: 29a333850d68c43788e37d1cf9c051c2,
-      type: 3}
-    WeaponItemView: {fileID: 6268710415584906307, guid: d65ef18a9ac024b72a8785123404c7a0,
-      type: 3}
-    WeaponItemAmmoView: {fileID: 549727824755264502, guid: db792556b454d4217b3d810a7bd8cc90,
+  - WeaponModelType: 0
+    WeaponView: {fileID: -9157396005647229268, guid: 29a333850d68c43788e37d1cf9c051c2,
       type: 3}
     IsAutomatic: 0
     MagazineAmmo: 20

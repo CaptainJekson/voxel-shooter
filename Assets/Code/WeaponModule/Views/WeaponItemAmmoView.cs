@@ -1,9 +1,11 @@
+using Code.WeaponModule.Enums;
 using UnityEngine;
 
 namespace Code.WeaponModule.Views
 {
     public class WeaponItemAmmoView : MonoBehaviour
     {
-        [field: SerializeField] private int Ammo;
+        [SerializeField] public WeaponModelType WeaponModelType;
+        [SerializeField] public int Ammo;
     }
 }

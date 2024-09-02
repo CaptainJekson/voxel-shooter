@@ -2,13 +2,322 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6392d7a4-377b-44e9-923f-6fb023c589fd" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Interfaces/IStateMachine.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Interfaces/IStateMachine.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Interfaces/ICharacterState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Interfaces/ICharacterState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/PlayerControllerInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/PlayerControllerInstaller.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Services/PlayerStateMachine.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/Services/PlayerStateMachine.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/States/Base/CharacterState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/States/Base/CharacterState.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/States/PlayerMoveSprintState.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/PlayerControllerModule/States/PlayerMoveSprintState.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Enums.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Enums/WeaponModelType.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Enums/WeaponModelType.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Services.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Services/WeaponItemCollector.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Services/WeaponItemCollector.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Services/WeaponStorage.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Services/WeaponStorage.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.voxel-shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.voxel-shooter/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/WeaponModule/Configs/WeaponConfigCollection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Configs/WeaponConfigCollection.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/WeaponModule/Views/WeaponItemAmmoView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Views/WeaponItemAmmoView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/WeaponModule/Views/WeaponItemView.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/Views/WeaponItemView.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Code/WeaponModule/WeaponInstaller.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/WeaponModule/WeaponInstaller.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Fonts/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Fonts/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/NoEmitAndNoEditor/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Attributes.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.OdinInspector.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.Config.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Serialization.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.Editor.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.dll.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/Sirenix.Utilities.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Assemblies/link.xml.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Attribute Processors.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Custom Drawers.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Editor Windows.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Demos/Sample - RPG Editor.unitypackage.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/ConfigData.bytes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/Odin Inspector Logo.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Assets/Editor/OdinPathLookup.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/GeneralDrawerConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/InspectorConfig.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Config/Editor/OdinModuleConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Entities.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Localization.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.data.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/MathematicsDrawers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/Sirenix.OdinInspector.Modules.UnityMathematics.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Modules/Unity.Mathematics/manifest.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/AssemblyImportSettingsAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/BuildAOTAutomation.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/EnsureOdinInspectorDefine.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/FixBrokenUnityObjectWrapperDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/Sirenix.OdinInspector.CompatibilityLayer.Editor.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/SyncListDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/SyncVarAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/Vector2IntMinMaxAttributeDrawer.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntDrawers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Editor/VectorIntPropertyResolvers.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/SerializedNetworkBehaviour.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Sirenix.OdinInspector.CompatibilityLayer.asmdef" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/Sirenix.OdinInspector.CompatibilityLayer.asmdef.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Odin Inspector/Scripts/VectorIntFormatters.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Plugins/Sirenix/Readme.txt.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Pistol.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/Pistol.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolAmmo.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolAmmo.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolItem.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolItem.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolSleeve.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Weapons/PistolSleeve.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Configs/WeaponModule/WeaponConfig.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Configs/WeaponModule/WeaponConfig.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально).meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-0-Ground.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-1-Tree.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-10-Spade.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-11-Igor_wSpade.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-2-Ghost.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-3-Tomb1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-4-Tomb2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-5-Tomb3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-6-Raven.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-7-Fence.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-8-Pillar.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Assets/SM-9-Igor_Tpose.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/CountrySide_Source.vox" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/CountrySide_Source.vox.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-0-Vegetation3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-1-Vegetation2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-2-GroundTile2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-3-GroundTile1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-4-Vegetation1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-5-House.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-6-Vegetation5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-7-Vegetation4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj/CountrySide-8-Rock.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-6.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-7.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-8.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.mtl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.mtl.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.obj" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.obj.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/VZ (раскидать нормально)/Obj2/MountainRocks-9.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +395,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725304715355</updated>
       <workItem from="1725304717579" duration="967000" />
-      <workItem from="1725307235819" duration="1405000" />
+      <workItem from="1725307235819" duration="4977000" />
     </task>
     <servers />
   </component>

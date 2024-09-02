@@ -1,8 +1,7 @@
 using System;
+using Code.WeaponModule.Enums;
 using Code.WeaponModule.Views;
-using Sirenix.OdinInspector;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Code.WeaponModule.Configs
 {
@@ -23,9 +22,9 @@ namespace Code.WeaponModule.Configs
         //public bool IsThrowing;
         //public bool IsMelee;
         
+        public WeaponModelType WeaponModelType;
         public WeaponView WeaponView;
-        public WeaponItemView WeaponItemView;
-        public WeaponItemAmmoView WeaponItemAmmoView;
+        public Sprite WeaponIcon;
         
         [Header("Stats")]
         public bool IsAutomatic;
@@ -37,16 +36,16 @@ namespace Code.WeaponModule.Configs
 
         public bool IsSleeve;
 
-        [ShowIf("IsSleeve")] [Header("Sleeve settings")]
+        //[ShowIf("IsSleeve")] [Header("Sleeve settings")]
         public WeaponSleeveView WeaponSleeveView;
 
         public bool IsProjectile;
         
-        [ShowIf("IsProjectile")] [Header("Projectile settings")]   
+        //[ShowIf("IsProjectile")] [Header("Projectile settings")]   
         public WeaponProjectileView WeaponProjectileView;
-        [ShowIf("IsProjectile")]
+        //[ShowIf("IsProjectile")]
         public float ProjectileSpeed;
-        [ShowIf("IsProjectile")]
+        //[ShowIf("IsProjectile")]
         public float ProjectileTimeLife;
     }
 }
