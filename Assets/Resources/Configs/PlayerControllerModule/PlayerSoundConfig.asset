@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457b4bce743341a8ab657c845ca90d95, type: 3}
+  m_Name: PlayerSoundConfig
+  m_EditorClassIdentifier: 
+  <Steps>k__BackingField: {fileID: 8300000, guid: 36b9e22021c97489ead1d8f04c93be03,
+    type: 3}
+  <StepsFast>k__BackingField: {fileID: 8300000, guid: dd6ea3df034784b009c5ce8fc810ec27,
+    type: 3}
+  <JumpSound>k__BackingField: {fileID: 8300000, guid: 11dfe7e8a70e34272883a59c3cf1d6fc,
+    type: 3}

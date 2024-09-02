@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0934227e9d694ce1bbd7f09d5b604765, type: 3}
+  m_Name: WeaponConfig
+  m_EditorClassIdentifier: 
+  DestroySleeveDelay: 0
+  WeaponConfigs:
+  - WeaponView: {fileID: -9157396005647229268, guid: 29a333850d68c43788e37d1cf9c051c2,
+      type: 3}
+    WeaponItemView: {fileID: 6268710415584906307, guid: d65ef18a9ac024b72a8785123404c7a0,
+      type: 3}
+    WeaponItemAmmoView: {fileID: 549727824755264502, guid: db792556b454d4217b3d810a7bd8cc90,
+      type: 3}
+    IsAutomatic: 0
+    MagazineAmmo: 20
+    PrewarmTime: 0
+    ShootingRate: 0.5
+    RechargeTime: 2
+    Damage: 10
+    IsSleeve: 1
+    WeaponSleeveView: {fileID: 4381069870938282773, guid: adf27f801f8f14adf993d8ee6bc0c065,
+      type: 3}
+    IsProjectile: 0
+    WeaponProjectileView: {fileID: 0}
+    ProjectileSpeed: 0
+    ProjectileTimeLife: 0
