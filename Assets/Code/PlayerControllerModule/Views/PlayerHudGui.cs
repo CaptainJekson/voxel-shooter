@@ -9,5 +9,8 @@ namespace Code.PlayerControllerModule.Views
     {
         [field: SerializeField] public Image StaminaBar { get; private set; }
         [field: SerializeField] public TextMeshProUGUI StaminaValueText { get; private set; }
+        [field: SerializeField] public Image WeaponIcon { get; private set; }
+        [field: SerializeField] public TextMeshProUGUI AllAmmoText { get; private set; }
+        [field: SerializeField] public TextMeshProUGUI MagazineAmmoText { get; private set; }
     }
 }

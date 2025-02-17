@@ -12,13 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0934227e9d694ce1bbd7f09d5b604765, type: 3}
   m_Name: WeaponConfig
   m_EditorClassIdentifier: 
-  DestroySleeveDelay: 0
+  DestroySleeveDelay: 10
   WeaponConfigs:
-  - WeaponModelType: 0
+  - WeaponModelType: 1
     WeaponView: {fileID: -9157396005647229268, guid: 29a333850d68c43788e37d1cf9c051c2,
       type: 3}
+    WeaponIcon: {fileID: 21300000, guid: 58bf6ae3e15ce4164a65c83d254382f6, type: 3}
     IsAutomatic: 0
-    MagazineAmmo: 20
+    MagazineCapacity: 20
+    PrewarmTime: 0
+    ShootingRate: 0.5
+    RechargeTime: 2
+    Damage: 10
+    IsSleeve: 1
+    WeaponSleeveView: {fileID: 4381069870938282773, guid: adf27f801f8f14adf993d8ee6bc0c065,
+      type: 3}
+    IsProjectile: 0
+    WeaponProjectileView: {fileID: 0}
+    ProjectileSpeed: 0
+    ProjectileTimeLife: 0
+  - WeaponModelType: 3
+    WeaponView: {fileID: -12794262581576371, guid: 8f1b6d68e32fd3f4b87ff9c8c2df9e92,
+      type: 3}
+    WeaponIcon: {fileID: 21300000, guid: 4b3a71e5aa5c6419c81989a62ea9eef3, type: 3}
+    IsAutomatic: 1
+    MagazineCapacity: 30
     PrewarmTime: 0
     ShootingRate: 0.5
     RechargeTime: 2

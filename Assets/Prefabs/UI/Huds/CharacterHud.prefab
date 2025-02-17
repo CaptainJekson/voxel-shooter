@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 100
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078cb0826548941a5a7da33f9c9708fd, type: 2}
   m_sharedMaterial: {fileID: 1361608690737632782, guid: 078cb0826548941a5a7da33f9c9708fd,
@@ -488,7 +488,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 58bf6ae3e15ce4164a65c83d254382f6, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 1
   m_FillCenter: 1
@@ -563,7 +563,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1000
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 078cb0826548941a5a7da33f9c9708fd, type: 2}
   m_sharedMaterial: {fileID: 1361608690737632782, guid: 078cb0826548941a5a7da33f9c9708fd,
@@ -983,6 +983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <StaminaBar>k__BackingField: {fileID: 8696379350880848386}
   <StaminaValueText>k__BackingField: {fileID: 4810215137948895139}
+  <WeaponIcon>k__BackingField: {fileID: 2081608335384350546}
+  <AllAmmoText>k__BackingField: {fileID: 8069864312945871482}
+  <MagazineAmmoText>k__BackingField: {fileID: 5204150152595365300}
 --- !u!1 &6931875933469652623
 GameObject:
   m_ObjectHideFlags: 0

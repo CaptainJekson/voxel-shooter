@@ -1,7 +1,9 @@
 using System;
+using System.Collections.Generic;
 using Code.WeaponModule.Enums;
 using Code.WeaponModule.Views;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Code.WeaponModule.Configs
 {
@@ -13,6 +15,28 @@ namespace Code.WeaponModule.Configs
 
         [Header("Weapons")] 
         public WeaponConfig[] WeaponConfigs;
+
+        private Dictionary<WeaponModelType, WeaponConfig> _weaponConfigsByType;
+        
+        public Dictionary<WeaponModelType, WeaponConfig> WeaponConfigsByType
+        {
+            get
+            {
+                if (_weaponConfigsByType != null)
+                {
+                    return _weaponConfigsByType;
+                }
+        
+                _weaponConfigsByType = new Dictionary<WeaponModelType, WeaponConfig>();
+                
+                foreach (var item in WeaponConfigs)
+                {
+                    _weaponConfigsByType.TryAdd(item.WeaponModelType, item);
+                }
+        
+                return _weaponConfigsByType;
+            }
+        }
     }
 
     [Serializable]
@@ -28,7 +52,7 @@ namespace Code.WeaponModule.Configs
         
         [Header("Stats")]
         public bool IsAutomatic;
-        public int MagazineAmmo;
+        public int MagazineCapacity;
         public float PrewarmTime;
         public float ShootingRate;
         public float RechargeTime;

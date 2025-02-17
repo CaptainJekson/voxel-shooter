@@ -27,6 +27,7 @@ namespace Code.WeaponModule.Services
             if (colliderHit.collider.TryGetComponent<WeaponItemView>(out var weaponItemView))
             {
                 _weaponStorage.AddAmmo(weaponItemView.WeaponModelType, weaponItemView.Ammo, true);
+                _weaponStorage.TrySelectWeapon(weaponItemView.WeaponModelType);
                 Object.Destroy(weaponItemView.gameObject);
             }
             else if (colliderHit.collider.TryGetComponent<WeaponItemAmmoView>(out var weaponItemAmmoView))
