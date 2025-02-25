@@ -33,7 +33,7 @@ public class SoundTest : MonoBehaviour
 
         _time = 0;
 
-        if (Input.GetKey(KeyCode.K))
+        if (Input.GetKey(KeyCode.Mouse0))
         {
             _count--;
         
