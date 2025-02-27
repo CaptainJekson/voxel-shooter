@@ -736,6 +736,11 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2656052718188701256, guid: fc16fc288345e4d2a9c1aa004dc85560,
+        type: 3}
+      propertyPath: _speed
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 3634298563200619398, guid: fc16fc288345e4d2a9c1aa004dc85560,
         type: 3}
       propertyPath: m_Name
@@ -744,7 +749,7 @@ PrefabInstance:
     - target: {fileID: 4941604224020687006, guid: fc16fc288345e4d2a9c1aa004dc85560,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.124109
+      value: -5.5
       objectReference: {fileID: 0}
     - target: {fileID: 4941604224020687006, guid: fc16fc288345e4d2a9c1aa004dc85560,
         type: 3}
@@ -754,7 +759,7 @@ PrefabInstance:
     - target: {fileID: 4941604224020687006, guid: fc16fc288345e4d2a9c1aa004dc85560,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 7.849
+      value: -7
       objectReference: {fileID: 0}
     - target: {fileID: 4941604224020687006, guid: fc16fc288345e4d2a9c1aa004dc85560,
         type: 3}
@@ -790,36 +795,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6645240834533440967, guid: fc16fc288345e4d2a9c1aa004dc85560,
-        type: 3}
-      propertyPath: m_Data.m_MaintainOffset
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6645240834533440967, guid: fc16fc288345e4d2a9c1aa004dc85560,
-        type: 3}
-      propertyPath: m_Data.m_ConstrainedAxes.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6645240834533440967, guid: fc16fc288345e4d2a9c1aa004dc85560,
-        type: 3}
-      propertyPath: m_Data.m_ConstrainedAxes.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6645240834533440967, guid: fc16fc288345e4d2a9c1aa004dc85560,
-        type: 3}
-      propertyPath: m_Data.m_ConstrainedAxes.z
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7134490144210111967, guid: fc16fc288345e4d2a9c1aa004dc85560,
-        type: 3}
-      propertyPath: m_WarningMessage
-      value: "\nBinding warning: Some generic clip(s) animate transforms that are
-        already bound by a Humanoid avatar. These transforms can only be changed
-        by Humanoid clips.\n\tTransform 'LeftLowerLeg'\n\tTransform 'RightUpperLeg'\n\tTransform
-        'RightLowerLeg'\n\tTransform 'LeftUpperLeg'\n\tTransform 'Chest'\n\tTransform
-        'LeftUpperArm'\n\tTransform 'Spine'\n\tTransform 'RightHand'\n\tTransform
-        'RightFoot'\n\tTransform 'LeftHand'\n\tand more ..."
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1154,11 +1129,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Map
       objectReference: {fileID: 0}
-    - target: {fileID: 2586133140969056010, guid: eb01c925a146c411ab8cd4fd7f3f9a67,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0de14e6f5d5b87e44b97dd972f7705d5, type: 2}
     - target: {fileID: 4291591015258307619, guid: eb01c925a146c411ab8cd4fd7f3f9a67,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1209,11 +1179,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7249684168709233967, guid: eb01c925a146c411ab8cd4fd7f3f9a67,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0de14e6f5d5b87e44b97dd972f7705d5, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
