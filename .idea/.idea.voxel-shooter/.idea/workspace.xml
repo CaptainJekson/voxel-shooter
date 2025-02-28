@@ -1,14 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6392d7a4-377b-44e9-923f-6fb023c589fd" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.voxel-shooter/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.voxel-shooter/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Animation/Human/Human_test_walk.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Animation/Human/Human_test_walk.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/HumanTest/human.vox" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/HumanTest/human.vox" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TestMap/Map.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TestMap/Map.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/human_test_IK.prefab" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/human_test_IK.prefab.meta" beforeDir="false" />
-    </list>
+    <list default="true" id="6392d7a4-377b-44e9-923f-6fb023c589fd" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -87,6 +80,7 @@
       <workItem from="1725304717579" duration="967000" />
       <workItem from="1725307235819" duration="4977000" />
       <workItem from="1740512761433" duration="791000" />
+      <workItem from="1740772015919" duration="911000" />
     </task>
     <servers />
   </component>
