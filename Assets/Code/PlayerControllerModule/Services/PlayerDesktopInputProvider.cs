@@ -7,7 +7,28 @@ namespace Code.PlayerControllerModule.Services
     {
         public Vector3 GetMoveDirection()
         {
-            return new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical"));
+            var x = 0f;
+            var z = 0f;
+
+            if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.LeftArrow))
+            {
+                x = -1f;
+            }
+            else if (Input.GetKey(KeyCode.D) || Input.GetKey(KeyCode.RightArrow))
+            {
+                x = 1f;
+            }
+
+            if (Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.DownArrow))
+            {
+                z = -1f;
+            }
+            else if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.UpArrow))
+            {
+                z = 1f;
+            }
+
+            return new Vector3(x, 0, z);
         }
 
         public float GetRotationX()
