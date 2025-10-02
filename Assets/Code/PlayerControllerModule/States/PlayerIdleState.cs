@@ -50,22 +50,5 @@ namespace Code.PlayerControllerModule.States
             _playerMover.Rotate(_playerInputProvider.GetRotationY(), _playerInputProvider.GetRotationX());
             _playerStaminaController.RecoverStamina();
         }
-
-        private void CameraRotate()
-        {
-            var rotateSpeed = _playerConfig.RotateSpeed;
-            
-            var rotY = rotateSpeed * _playerInputProvider.GetRotationY();
-            var rotX = rotateSpeed * _playerInputProvider.GetRotationX();
-
-            _playerView.currentXRotation -= rotX;
-            _playerView.currentYRotation += rotY;
-            
-            _playerView.currentXRotation = Mathf.Clamp(_playerView.currentXRotation, 
-                _playerConfig.MinRotationX, _playerConfig.MaxRotationX);
-            
-            _playerView.headTransform.localRotation = Quaternion.Euler(_playerView.currentXRotation, 
-                _playerView.currentYRotation, 0);
-        }
     }
 }
