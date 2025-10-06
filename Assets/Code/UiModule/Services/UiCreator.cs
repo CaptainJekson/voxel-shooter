@@ -49,6 +49,7 @@ namespace Code.UiModule.Services
             }
 
             var instanceGui = Object.Instantiate(templateGui, parent);
+            _uiCreated.Add(instanceGui);
 
             return instanceGui;
         }

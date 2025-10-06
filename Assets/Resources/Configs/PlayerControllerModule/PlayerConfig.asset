@@ -16,7 +16,7 @@ MonoBehaviour:
     type: 3}
   <StartPosition>k__BackingField: {x: -6.5, y: 0, z: 8}
   <Gravity>k__BackingField: -9.81
-  <Speed>k__BackingField: 4
+  <Speed>k__BackingField: 6
   <SprintMultiplier>k__BackingField: 2
   <SlidePower>k__BackingField: 4
   <SlopeLimit>k__BackingField: 45
