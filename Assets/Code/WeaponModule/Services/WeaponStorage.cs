@@ -51,7 +51,7 @@ namespace Code.WeaponModule.Services
             }
         }
 
-        public void RechargeSelectedWeapon()
+        public void ReloadSelectedWeapon()
         {
             if (!_weaponDataByType.TryGetValue(_selectedWeapon, out var weaponData))
             {

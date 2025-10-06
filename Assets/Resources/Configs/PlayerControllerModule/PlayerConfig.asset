@@ -25,9 +25,9 @@ MonoBehaviour:
   <MinRotationX>k__BackingField: -90
   <MaxRotationX>k__BackingField: 90
   <JumpHeight>k__BackingField: 2
-  <StaminaDrainRate>k__BackingField: 20
+  <StaminaDrainRate>k__BackingField: 5
   <StaminaRecoveryRate>k__BackingField: 10
   <StaminaMinStartSprint>k__BackingField: 20
-  <JumpStaminaCost>k__BackingField: 50
+  <JumpStaminaCost>k__BackingField: 10
   <MaxStamina>k__BackingField: 100
   <PushPower>k__BackingField: 7

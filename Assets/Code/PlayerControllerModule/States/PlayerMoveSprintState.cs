@@ -38,14 +38,14 @@ namespace Code.PlayerControllerModule.States
         
         public override void OnEnterState()
         {
-            _playerView.mouthAudioSource.clip = _playerSoundConfig.StepsFast;
-            _playerView.mouthAudioSource.loop = true;
-            _playerView.mouthAudioSource.Play();
+            _playerView.stepAudioSource.clip = _playerSoundConfig.StepsFast;
+            _playerView.stepAudioSource.loop = true;
+            _playerView.stepAudioSource.Play();
         }
 
         public override void OnExitState()
         {
-            _playerView.mouthAudioSource.Stop();
+            _playerView.stepAudioSource.Stop();
         }
 
         public override bool CanEnter()

@@ -1,5 +1,6 @@
 using Code.GlobalUtils.MonoProviders;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Code.PlayerControllerModule.Views
 {
@@ -9,7 +10,8 @@ namespace Code.PlayerControllerModule.Views
         [SerializeField] public CharacterController characterController;
         [SerializeField] public Transform headTransform;
         [SerializeField] public OnControllerColliderHitProvider colliderHitProvider;
-        [SerializeField] public AudioSource mouthAudioSource;
+        [SerializeField] public AudioSource stepAudioSource;
+        [SerializeField] public AudioSource jumpAudioSource;
 
         [HideInInspector] public bool isGrounded;
         [HideInInspector] public float verticalVelocity;
