@@ -12,6 +12,7 @@ namespace Code.PlayerControllerModule.Views
         [SerializeField] public OnControllerColliderHitProvider colliderHitProvider;
         [SerializeField] public AudioSource stepAudioSource;
         [SerializeField] public AudioSource jumpAudioSource;
+        [SerializeField] public Animator handsAnimator;
 
         [HideInInspector] public bool isGrounded;
         [HideInInspector] public float verticalVelocity;

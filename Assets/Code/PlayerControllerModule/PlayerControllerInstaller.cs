@@ -1,8 +1,8 @@
 using Code.PlayerControllerModule.Configs;
+using Code.PlayerControllerModule.Interfaces;
 using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States;
 using Code.PlayerControllerModule.Views;
-using Code.PlayerModule.Interfaces;
 using Zenject;
 
 namespace Code.PlayerControllerModule

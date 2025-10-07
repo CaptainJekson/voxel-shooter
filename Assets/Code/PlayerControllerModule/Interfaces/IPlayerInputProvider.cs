@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace Code.PlayerModule.Interfaces
+namespace Code.PlayerControllerModule.Interfaces
 {
     public interface IPlayerInputProvider
     {

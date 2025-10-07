@@ -1,4 +1,4 @@
-using Code.PlayerModule.Interfaces;
+using Code.PlayerControllerModule.Interfaces;
 using UnityEngine;
 
 namespace Code.PlayerControllerModule.Services

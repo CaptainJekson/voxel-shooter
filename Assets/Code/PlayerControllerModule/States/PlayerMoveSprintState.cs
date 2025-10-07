@@ -4,7 +4,6 @@ using Code.PlayerControllerModule.Interfaces;
 using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
-using Code.PlayerModule.Interfaces;
 using UnityEngine;
 
 namespace Code.PlayerControllerModule.States
