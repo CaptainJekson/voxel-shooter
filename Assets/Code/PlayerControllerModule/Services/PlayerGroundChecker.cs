@@ -1,4 +1,5 @@
 using Code.PlayerControllerModule.Views;
+using VContainer;
 using Zenject;
 
 namespace Code.PlayerControllerModule.Services
@@ -7,9 +8,9 @@ namespace Code.PlayerControllerModule.Services
     {
         private PlayerView _playerView;
         
-        public PlayerGroundChecker(PlayerView playerView)
+        public PlayerGroundChecker(IObjectResolver objectResolver)
         {
-            _playerView = playerView;
+            _playerView = objectResolver.Resolve<PlayerView>();
         }
 
         public void Tick()

@@ -3,6 +3,7 @@ using Code.GlobalUtils.MonoProviders;
 using Code.PlayerControllerModule.Configs;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.Services
 {
@@ -12,11 +13,10 @@ namespace Code.PlayerControllerModule.Services
         private readonly PlayerConfig _playerConfig;
         
         public PlayerCollisionHandler(
-            PlayerView playerView, 
-            PlayerConfig playerConfig)
+            IObjectResolver objectResolver)
         {
-            _colliderHitProvider = playerView.colliderHitProvider;
-            _playerConfig = playerConfig;
+            _colliderHitProvider = objectResolver.Resolve<PlayerView>().colliderHitProvider;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             
             _colliderHitProvider.Subscribe(OnColliderHit);
         }

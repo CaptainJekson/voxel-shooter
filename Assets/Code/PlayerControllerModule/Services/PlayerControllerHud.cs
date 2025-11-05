@@ -6,6 +6,7 @@ using Code.UiModule.Views.Enums;
 using Code.WeaponModule.Configs;
 using Code.WeaponModule.Enums;
 using Code.WeaponModule.Services;
+using VContainer;
 
 namespace Code.PlayerControllerModule.Services
 {
@@ -21,17 +22,14 @@ namespace Code.PlayerControllerModule.Services
         private WeaponModelType _selectedWeapon;
 
         public PlayerControllerHud(
-            PlayerConfig playerConfig, 
-            UiCreator uiCreator, 
-            PlayerStaminaController playerStaminaController,
-            WeaponConfigCollection weaponConfigCollection,
-            WeaponStorage weaponStorage)
+            IObjectResolver objectResolver, 
+            PlayerStaminaController playerStaminaController)
         {
-            _playerConfig = playerConfig;
-            _uiCreator = uiCreator;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
+            _uiCreator = objectResolver.Resolve<UiCreator>();
             _playerStaminaController = playerStaminaController;
-            _weaponConfigCollection = weaponConfigCollection;
-            _weaponStorage = weaponStorage;
+            _weaponConfigCollection = objectResolver.Resolve<WeaponConfigCollection>();
+            _weaponStorage = objectResolver.Resolve<WeaponStorage>();
             
             Show(); //todo должна будет вызываться там где будет создаваться игрок
         }

@@ -11,14 +11,6 @@ namespace Code.PlayerControllerModule
     {
         public override void InstallBindings()
         {
-            Container.Bind<PlayerConfig>().FromScriptableObjectResource("Configs/PlayerControllerModule/PlayerConfig")
-                .AsSingle();
-            
-            Container.Bind<PlayerSoundConfig>().FromScriptableObjectResource("Configs/PlayerControllerModule/PlayerSoundConfig")
-                .AsSingle();
-            
-            Container.Bind<PlayerView>().FromFactory<PlayerFactory>().AsSingle().NonLazy();
-            
             //controller logic
             Container.Bind<IPlayerInputProvider>().To<PlayerDesktopInputProvider>().AsSingle();
             Container.Bind<PlayerMover>().AsSingle();

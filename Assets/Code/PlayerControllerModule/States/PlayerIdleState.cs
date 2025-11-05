@@ -4,6 +4,7 @@ using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.States
 {
@@ -16,16 +17,15 @@ namespace Code.PlayerControllerModule.States
         private readonly IPlayerInputProvider _playerInputProvider;
         
         public PlayerIdleState(
-            PlayerView playerView, 
             PlayerMover playerMover, 
             PlayerStaminaController playerStaminaController,
-            PlayerConfig playerConfig, 
+            IObjectResolver objectResolver, 
             IPlayerInputProvider playerInputProvider)
         {
-            _playerView = playerView;
+            _playerView = objectResolver.Resolve<PlayerView>();
             _playerMover = playerMover;
             _playerStaminaController = playerStaminaController;
-            _playerConfig = playerConfig;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             _playerInputProvider = playerInputProvider;
         }
         

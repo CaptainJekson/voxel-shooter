@@ -4,6 +4,7 @@ using Code.UiModule.Configs;
 using Code.UiModule.Views;
 using Code.UiModule.Views.Enums;
 using UnityEngine;
+using VContainer;
 using Object = UnityEngine.Object;
 
 namespace Code.UiModule.Services

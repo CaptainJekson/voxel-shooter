@@ -3,6 +3,7 @@ using Code.GlobalUtils.MonoProviders;
 using Code.PlayerControllerModule.Views;
 using Code.WeaponModule.Views;
 using UnityEngine;
+using VContainer;
 using Object = UnityEngine.Object;
 
 namespace Code.WeaponModule.Services
@@ -14,10 +15,10 @@ namespace Code.WeaponModule.Services
 
         public WeaponItemCollector(
             PlayerView playerView,
-            WeaponStorage weaponStorage)
+            IObjectResolver objectResolver)
         {
             _onControllerColliderHitProvider = playerView.colliderHitProvider;
-            _weaponStorage = weaponStorage;
+            _weaponStorage = objectResolver.Resolve<WeaponStorage>();
             
             _onControllerColliderHitProvider.Subscribe(Handler);
         }

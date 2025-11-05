@@ -4,6 +4,7 @@ using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.States
 {
@@ -19,19 +20,17 @@ namespace Code.PlayerControllerModule.States
         private float _verticalVelocity;
         
         public PlayerMoveState(
-            PlayerView playerView,
-            PlayerConfig playerConfig,
+            IObjectResolver objectResolver,
             PlayerMover playerMover, 
             PlayerStaminaController playerStaminaController,
-            IPlayerInputProvider playerInputProvider,
-            PlayerSoundConfig playerSoundConfig)
+            IPlayerInputProvider playerInputProvider)
         {
-            _playerView = playerView;
-            _playerConfig = playerConfig;
+            _playerView = objectResolver.Resolve<PlayerView>();
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             _playerMover = playerMover;
             _playerStaminaController = playerStaminaController;
             _playerInputProvider = playerInputProvider;
-            _playerSoundConfig = playerSoundConfig;
+            _playerSoundConfig = objectResolver.Resolve<PlayerSoundConfig>();
         }
 
         public override void OnEnterState()

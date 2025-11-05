@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Code.WeaponModule.Configs;
 using Code.WeaponModule.Enums;
 using UnityEngine;
+using VContainer;
 
 namespace Code.WeaponModule.Services
 {
@@ -19,9 +20,9 @@ namespace Code.WeaponModule.Services
         public event Action<WeaponModelType> WeaponChanged;
         
         public WeaponStorage(
-            WeaponConfigCollection weaponConfigCollection)
+            IObjectResolver objectResolver)
         {
-            _weaponConfigCollection = weaponConfigCollection;
+            _weaponConfigCollection = objectResolver.Resolve<WeaponConfigCollection>();
             
             _weaponDataByType = new Dictionary<WeaponModelType, WeaponData>();
         }
@@ -114,11 +115,6 @@ namespace Code.WeaponModule.Services
             WeaponChanged?.Invoke(_selectedWeapon);
             WeaponAmmoChanged?.Invoke(_selectedWeapon, weaponData.MagazineAmmo, weaponData.Ammo);
             return true;
-        }
-
-        public void Make()
-        {
-            Debug.LogError("VContainer вызвал класс Zenject!");
         }
     }
 

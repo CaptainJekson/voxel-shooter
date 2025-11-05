@@ -5,6 +5,7 @@ using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.States
 {
@@ -20,19 +21,17 @@ namespace Code.PlayerControllerModule.States
         private PlayerStateMachine _playerStateMachine;
         
         public PlayerMoveSprintState(
-            PlayerConfig playerConfig, 
-            PlayerView playerView, 
+            IObjectResolver objectResolver,
             PlayerStaminaController playerStaminaController, 
             PlayerMover playerMover,
-            IPlayerInputProvider playerInputProvider, 
-            PlayerSoundConfig playerSoundConfig)
+            IPlayerInputProvider playerInputProvider)
         {
-            _playerConfig = playerConfig;
-            _playerView = playerView;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
+            _playerView = objectResolver.Resolve<PlayerView>();
             _playerStaminaController = playerStaminaController;
             _playerMover = playerMover;
             _playerInputProvider = playerInputProvider;
-            _playerSoundConfig = playerSoundConfig;
+            _playerSoundConfig = objectResolver.Resolve<PlayerSoundConfig>();
         }
         
         public override void OnEnterState()

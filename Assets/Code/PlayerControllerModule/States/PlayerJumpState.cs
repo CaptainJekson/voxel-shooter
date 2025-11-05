@@ -4,6 +4,7 @@ using Code.PlayerControllerModule.Services;
 using Code.PlayerControllerModule.States.Base;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.States
 {
@@ -17,19 +18,17 @@ namespace Code.PlayerControllerModule.States
         private readonly PlayerSoundConfig _playerSoundConfig;
         
         public PlayerJumpState(
-            PlayerView playerView, 
             PlayerMover playerMover, 
             PlayerStaminaController playerStaminaController, 
             IPlayerInputProvider playerInputProvider, 
-            PlayerConfig playerConfig, 
-            PlayerSoundConfig playerSoundConfig)
+            IObjectResolver objectResolver)
         {
-            _playerView = playerView;
+            _playerView = objectResolver.Resolve<PlayerView>();
             _playerMover = playerMover;
             _playerStaminaController = playerStaminaController;
-            _playerConfig = playerConfig;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             _playerInputProvider = playerInputProvider;
-            _playerSoundConfig = playerSoundConfig;
+            _playerSoundConfig = objectResolver.Resolve<PlayerSoundConfig>();
         }
 
         public override void OnEnterState()

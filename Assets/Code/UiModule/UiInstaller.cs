@@ -8,16 +8,6 @@ namespace Code.UiModule
     {
         public override void InstallBindings()
         {
-            Container.Bind<UiHudConfig>().FromScriptableObjectResource("Configs/UiModule/UiHudConfig")
-                .AsSingle();
-            
-            Container.Bind<UiWindowConfig>().FromScriptableObjectResource("Configs/UiModule/UiWindowConfig")
-                .AsSingle();
-            
-            Container.Bind<UiPopupConfig>().FromScriptableObjectResource("Configs/UiModule/UiPopupConfig")
-                .AsSingle();
-
-            Container.Bind<UiCreator>().AsSingle();
         }
     }
 }

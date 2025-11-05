@@ -1,6 +1,7 @@
 using Code.PlayerControllerModule.Configs;
 using Code.PlayerControllerModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.Services
 {
@@ -11,11 +12,10 @@ namespace Code.PlayerControllerModule.Services
         private readonly Transform _transform;
 
         public PlayerMover(
-            PlayerView playerView, 
-            PlayerConfig playerConfig)
+            IObjectResolver objectResolver)
         {
-            _playerView = playerView;
-            _playerConfig = playerConfig;
+            _playerView = objectResolver.Resolve<PlayerView>();
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             _transform = _playerView.transform;
         }
 

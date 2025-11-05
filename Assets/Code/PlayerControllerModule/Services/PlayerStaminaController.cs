@@ -1,6 +1,7 @@
 using System;
 using Code.PlayerControllerModule.Configs;
 using UnityEngine;
+using VContainer;
 
 namespace Code.PlayerControllerModule.Services
 {
@@ -14,9 +15,9 @@ namespace Code.PlayerControllerModule.Services
 
         public event Action<float> StaminaChanged; 
 
-        public PlayerStaminaController(PlayerConfig playerConfig)
+        public PlayerStaminaController(IObjectResolver objectResolver)
         {
-            _playerConfig = playerConfig;
+            _playerConfig = objectResolver.Resolve<PlayerConfig>();
             _currentStamina = _playerConfig.MaxStamina;
         }
 
