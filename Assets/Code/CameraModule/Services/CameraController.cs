@@ -1,22 +1,25 @@
 using Code.CameraModule.Interfaces;
 using Code.CameraModule.Views;
 using UnityEngine;
+using VContainer;
 
 namespace Code.CameraModule.Services
 {
     public class CameraController : ICameraController
     {
-        private readonly MainCamera _mainCamera;
         private readonly Transform _cameraTransform;
+        private readonly TestClassInVContainer  _testClassInVContainer;
         
-        public CameraController(MainCamera mainCamera)
+        public CameraController(IObjectResolver objectResolver)
         {
-            _mainCamera = mainCamera;
-            _cameraTransform = _mainCamera.transform;
+            _cameraTransform = objectResolver.Resolve<MainCamera>().transform;
+            _testClassInVContainer = objectResolver.Resolve<TestClassInVContainer>();
         }
 
         public void SetMainCameraInParent(Transform parent)
         {
+            _testClassInVContainer.Make();
+            
             _cameraTransform.position = parent.position;
             _cameraTransform.SetParent(parent);
         }

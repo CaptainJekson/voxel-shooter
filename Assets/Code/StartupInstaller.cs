@@ -7,18 +7,27 @@ using Code.UiModule;
 using Code.UiModule.Views;
 using Code.WeaponModule;
 using UnityEngine;
+using VContainer;
+using VContainer.Unity;
 using Zenject;
 
 namespace Code
 {
     public class StartupInstaller : MonoInstaller
     {
-        [SerializeField] public MainCamera _mainCamera;
         [SerializeField] public UiRoot _uiRoot;
+        [SerializeField] private GameLifeTimeScope _vContainerScope;
         
         public override void InstallBindings()
         {
-            Container.Bind<MainCamera>().FromInstance(_mainCamera).AsSingle().NonLazy();
+            //force VContainer build
+            _vContainerScope.SetZenjectContainer(Container);
+            _vContainerScope.Build();
+            
+            var resolver = _vContainerScope.Container;
+            Container.Bind<IObjectResolver>().FromInstance(resolver).AsSingle();
+            //-----
+            
             Container.Bind<UiRoot>().FromInstance(_uiRoot).AsSingle().NonLazy();
             
             CameraInstaller.Install(Container);

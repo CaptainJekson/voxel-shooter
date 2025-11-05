@@ -973,6 +973,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1290170448}
+  - component: {fileID: 1290170449}
   - component: {fileID: 1290170447}
   - component: {fileID: 1290170446}
   m_Layer: 0
@@ -994,8 +995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 98f15511312da499891fc424a14eacb8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mainCamera: {fileID: 330585548}
   _uiRoot: {fileID: 764258445}
+  _vContainerScope: {fileID: 1290170449}
 --- !u!114 &1290170447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1043,6 +1044,23 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1290170449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1290170445}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593470c853d44f7a92f43d58c0c7b0d3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  parentReference:
+    TypeName: 
+  autoRun: 1
+  autoInjectGameObjects: []
+  _mainCamera: {fileID: 330585548}
 --- !u!1001 &1341105766
 PrefabInstance:
   m_ObjectHideFlags: 0

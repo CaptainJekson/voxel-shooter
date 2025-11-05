@@ -115,6 +115,11 @@ namespace Code.WeaponModule.Services
             WeaponAmmoChanged?.Invoke(_selectedWeapon, weaponData.MagazineAmmo, weaponData.Ammo);
             return true;
         }
+
+        public void Make()
+        {
+            Debug.LogError("VContainer вызвал класс Zenject!");
+        }
     }
 
     public class WeaponData
